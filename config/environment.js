@@ -6,6 +6,19 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+
+   googleFonts: [
+      'Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+      'Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+       'style-src': "'self' fonts.googleapis.com"
+    },
+
+
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -48,3 +61,6 @@ module.exports = function(environment) {
 
   return ENV;
 };
+
+
+

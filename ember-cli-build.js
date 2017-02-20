@@ -4,8 +4,24 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    
+favicon: {
+
+    config: {
+ path: "favicons/",
+      // these options are passed directly to the favicons module 
+
+    }},
+
+
+
+
+
+
     // Add options here
   });
+
+
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
